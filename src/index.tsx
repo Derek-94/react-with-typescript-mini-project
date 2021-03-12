@@ -3,12 +3,18 @@ import ReactDOM from 'react-dom';
 import { RecoilRoot } from "recoil"
 import './index.css';
 import App from './App';
+import Counter from "./Counter";
+import CounterReducer from "./CounterReducer";
+import Info from "./Info"
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
     <RecoilRoot>
       <App />
+      <Counter />
+      <CounterReducer />
+      <Info />
     </RecoilRoot>
   </React.StrictMode>,
   document.getElementById('root')
